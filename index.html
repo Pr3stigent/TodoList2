@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="nav-bar-container">
+                <h1 class="header" >To-Do List</h1>
+            </div>
+        </nav>
+        <div class="main-container main-container-mobile">
+            <div class="task-type">
+                <div class="task-type-header" style="background-color: rgb(0, 115, 255);">
+                    <div class="task-type-header-container">
+                        <h2 class="task-type-header-number">1</h2>
+                        <div class="task-type-seperator"></div>
+                        <h2 class="task-type-header-title">To-Do</h2>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M5.617 2.076a1 1 0 0 1 1.09.217L8 3.586l1.293-1.293a1 1 0 0 1 1.414 0L12 3.586l1.293-1.293a1 1 0 0 1 1.414 0L16 3.586l1.293-1.293A1 1 0 0 1 19 3v18a1 1 0 0 1-1.707.707L16 20.414l-1.293 1.293a1 1 0 0 1-1.414 0L12 20.414l-1.293 1.293a1 1 0 0 1-1.414 0L8 20.414l-1.293 1.293A1 1 0 0 1 5 21V3a1 1 0 0 1 .617-.924ZM9 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H9Zm0 4a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H9Zm0 4a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H9Z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div id="task-container">
+                    <!-- <div class="task-item">
+                        <div class="task-item-top">
+                            <h3 class="task-item-title" contenteditable="true">Opened</h3>
+                            <div class="task-item-action-container">
+                                <a class="task-item-action">
+                                    <img src="svg/todo-list.svg"/> 
+                                </a>
+                                <a>
+                                    <img src="svg/ongoing.svg"/>                               
+                                </a>
+                                <a>
+                                    <img src="svg/finished.svg"/>     
+                                </a>
+                                <a>
+                                    <img src="svg/delete.svg"/>                                     
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="task-item-description" contenteditable="true">Filler</h4>
+                    </div> -->
+                </div>
+                <div onclick="addTask('TODO')" class="task-list-add">
+                    <img />
+                    <h3 class="task-list-add-title">Add new task</h3>
+                </div>
+            </div>
+            <div class="task-type">
+                <div class="task-type-header"  style="background-color: rgb(255, 123, 0);">
+                    <div class="task-type-header-container">
+                        <h2 class="task-type-header-number">2</h2>
+                        <div class="task-type-seperator"></div>
+                        <h2 class="task-type-header-title">Ongoing</h2>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
+                    </svg>                      
+                </div>
+                <div id="task-container2">
+                    
+                </div>
+                <div onclick="addTask('ONGOING')" class="task-list-add">
+                    <img />
+                    <h3 class="task-list-add-title">Add new task</h3>
+                </div>
+            </div>
+            <div class="task-type">
+                <div class="task-type-header"  style="background-color: rgb(0, 216, 90);">
+                    <div class="task-type-header-container">
+                        <h2 class="task-type-header-number">3</h2>
+                        <div class="task-type-seperator"></div>
+                        <h2 class="task-type-header-title">Finished</h2>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-200 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                    </svg>                      
+                </div>
+                <div id="task-container3">
+                    
+                </div>
+                <div onclick="addTask('FINISHED')" class="task-list-add">
+                    <img />
+                    <h3 class="task-list-add-title">Add new task</h3>
+                </div>
+            </div>
+            <script src="js/main.js"></script>
+        </container>
+    </body>
+</html>
